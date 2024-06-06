@@ -1,8 +1,8 @@
 #import "@preview/cetz:0.2.2"
 
 #let colorS = color.rgb("#B4D3B4")
-#let colorQ = color.rgb("#FF5733")
-#let colorT = color.rgb("#FB4C2B")
+#let colorQ = color.rgb("#FB772A")
+#let colorT = color.rgb("#8AEAFD")
 
 #set page(
   paper: "a4",
@@ -24,20 +24,38 @@
 
 #set enum(numbering: "1.)")
 
+#show heading.where(level: 1): it => align(center)[
+  #it
+  #v(10pt)
+]
+
 #show heading.where(level: 2): it => block(
   fill: colorS,
   inset: 10pt,
   radius: 4pt,
 )[#it]
 
-
-
-#show heading.where(level: 1): it => align(center)[#it]
-
 #show heading.where(level: 3): it => [#underline[#it]]
 
+#let color_description(color, desc) = [
+  #grid(
+    columns: (auto,auto,auto),
+    gutter: 4pt,
+    align: horizon + center,
+    rect(width: 20pt, height: 20pt, fill: color, radius: (rest: 5pt)), [-], [#desc]
+  )
+]
 
 = Analízis vizsga bizonyítással kért tételek
+
+#grid(
+  columns: (auto, auto, auto),
+  gutter: 10pt,
+  color_description(colorS, "Sorozat"),
+  color_description(colorT, "Sorok"),
+  color_description(colorQ, "Vegyes")
+)
+
 == Teljes indukció elve
 
 Tegyük fel, hogy minden $n$ természetes számra adott egy $A(n)$ állítás, és azt tudjuk, hogy
@@ -56,7 +74,6 @@ $ S colon.eq {n in NN bar A(n) "igaz"} $
 Ekkor $S subset NN$ és $S$ induktív halmaz, hiszen $0 in S$, és ha $n in S$, azaz $A(n)$ igaz, akkor $A(n + 1)$ is igaz, ezért $n + 1 in S$ teljesül, következésképpen $S$ induktív halmaz. Mivel $NN$ a legszűkebb induktív halmaz, ezért az $NN subset S$ tartalmazás is fennáll, tehát $S eq NN$. Ez pedig azt jelenti, hogy minden $n$ természetes számra igaz.
 
 #pagebreak()
-
 
 == A szuprémum elv
 
@@ -496,7 +513,12 @@ $ abs(a_n - A) eq abs((a_n - a_v_n) + (a_v_n - A)) lt.eq abs(a_n - a_m) + abs(a_
 
 #pagebreak()
 
-
+#show heading.where(level: 2): it => it.body
+#show heading.where(level: 2): it => block(
+  fill: colorT,
+  inset: 10pt,
+  radius: 4pt,
+)[#it]
 
 == Végtelen sorokra vonatkozó összehasonlító kritériumok
 \
@@ -1020,6 +1042,13 @@ $ lim_(n arrow +infinity) (f circle.small g)(x_n) eq lim_(x arrow +infinity) (f(
 Ezért a folytonosságra vonatkozó átviteli elv szerint $f circle.small g in C{a}$
 
 #pagebreak()
+
+#show heading.where(level: 2): it => it.body
+#show heading.where(level: 2): it => block(
+  fill: colorQ,
+  inset: 10pt,
+  radius: 4pt,
+)[#it]
 
 == Korlátos és zárt intervallumon értelmezett folytonos függvény korlátossága.
 Ha $f in C[a,b]$, akkor $f$ korlátos az $[a,b]$ intervallumon

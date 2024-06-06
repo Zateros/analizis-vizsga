@@ -1202,3 +1202,35 @@ $ q! dot.op (e -s_q) eq q! dot.op (p/q - s_q) eq q! dot.op (p/q -1 -1/1! -1/2! -
 egész szám. Ez viszont (\#) alapján nem lehetséges.
 #pagebreak()
 == A $pi$ szám értelmezésére vonatkozó tétel
+
+A $cos$ függvénynek a $[0,2]$ intervallumban pontosan egy zérushelye van, azaz $[0,2]$-nek pontosan egy $xi$ pontjában áll fenn a $cos xi eq 0$ egyenlőség. Ennek a $xi$ számnak a kétszereseként *értelmezzük a $pi$ számot:*
+
+$ pi := 2 xi $
+
+=== Bizonyítás
+
+A Bolzano-tételt alkamazzuk. Világos, hogy $cos in C[0,2]$ és $cos 0 eq 1$. Másrészt
+
+$ cos 2 eq 1 - 2^2/2! + 2^4/4! - 2^6/6! + 2^8/8! - 2^10/10! + 2^12/12! - ... eq $
+$ eq underbrace(1- 2 + 2/3, eq "-1/3") - 2^6/6! dot.op underbrace((1 - 2^2/(7 dot.op 8)), gt 0) - 2^10/10! dot.op underbrace((1-2^2/(11 dot.op 12)), gt 0) - ... lt -1/3 lt 0 $
+
+A Bolzano-tétel feltételei tehát teljesülnek, ezért $exists xi in (0,2): cos xi eq 0$.
+
+A $xi$ pont egyértelműsége következik abból, hogy a $cos arrow.b$ a $[0,2]$ intervallumban, azaz
+
+$ (\*) "ha " 0 lt.eq x lt y lt.eq 2 ", akkor " cos x gt cos y $
+
+Ezt fogjuk most igazolni. Az eddigiekből következik, hogy
+
+$ cos x gt cos y arrow.long.l.r.double cos x - cos y eq -2 dot.op sin (x+y)/2 dot.op sin (x-y)/2 eq $
+$ eq 2 dot.op sin (x+y)/2 dot.op sin (y-x)/2 gt 0 $
+
+Mivel
+
+$ 0 lt.eq x lt y lt.eq 2 arrow.long.double 0 lt (x+y)/2 lt 2 "és " 0 lt (y-x)/2 lt 2, $
+
+ezért a (\*) állítás a 
+
+$ sin z eq z - z^3/3! + z^5/5! - z^7/7! + ... eq z dot.op underbrace((1- z^2/(2 dot.op 3)), gt 0) + z^5/5! dot.op underbrace((1 - z^2/(6 dot.op 7)), gt 0) + ... gt 0 (z in (0,2)) $
+
+egyenlőtlenség következménye.

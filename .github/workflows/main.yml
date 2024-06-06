@@ -1,0 +1,35 @@
+name: Build Typst document
+on:
+  push:
+      branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Typst
+        uses: typst-community/setup-typst@v3
+      - uses: fontist/setup-fontist@v2
+      - run: fontist install "Times New Roman" -a
+      - run: typst compile analizis_vizsga.typ analizis_vizsga.pdf --font-path ~/.fontist/fonts
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDFs
+          path: |
+            analizis_vizsga.pdf
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        name: Release
+        with:
+          repo_token: "${{ secrets.PAT }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Masszív ápdét"
+          files: |
+            analizis_vizsga.pdf

@@ -168,7 +168,7 @@ $ exists epsilon in RR: a_n lt.eq epsilon lt.eq b_m space space forall n,m in NN
 
 Ha $n eq m$, akkor azt kapjuk, hogy
 
-$ a_n lt.eq epsilon lt.eq b_n space arrow.double.l.r.long space epsilon in [a_n,b_n] forall n in NN "esetén" $
+$ a_n lt.eq epsilon lt.eq b_n space arrow.double.l.r.long space epsilon in [a_n,b_n] space space forall n in NN "esetén" $
 
 és azt jelenti, hogy
 

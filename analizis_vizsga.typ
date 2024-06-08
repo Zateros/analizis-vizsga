@@ -164,7 +164,7 @@ Valóban,
 
 Mivel $A eq.not emptyset "és" B eq.not emptyset$, ezért "$a_n lt.eq b_m "tetszőleges" n,m in NN "esetén"$" miatt a teljességi axióma feltételei teljesülnek, így
 
-$ exists epsilon in RR: a_n lt.eq epsilon lt.eq b_m space space forall n,m in RR "indexre" $
+$ exists epsilon in RR: a_n lt.eq epsilon lt.eq b_m space space forall n,m in NN "indexre" $
 
 Ha $n eq m$, akkor azt kapjuk, hogy
 

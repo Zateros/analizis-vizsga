@@ -465,60 +465,34 @@ A monoton sorozatok határértékére vonatkozó tételből következik, hogy a 
 
 #pagebreak()
 
-== A Cauchy-féle konvergenciakritérium sorozatokra
-
-Legyen $(a_n)$ egy valós sorozat.\
-Ekkor\
-$ (a_n) "konvergens" arrow.l.r.double.long (a_n) "Cauchy-sorozat" $
-
-=== Bizonyítás
-
-$arrow.double$ Tegyük fel, hogy $(a_n)$ konvergens, és $A colon.eq lim(a_n)$ a határértéke. Legyen $epsilon gt 0$ tetszőleges valós szám. A konvergencia definíciója szerint
-$ exists n_0 in NN, forall n gt n_0 : abs(a_n - A) lt epsilon/2 $
-Így $forall m,n gt n_0$ index esetén
-$ abs(a_n - a_m) eq abs((a_n -A) + (A - a_m)) lt.eq abs(a_n - A) + abs(a_m - A) lt epsilon/2 + epsilon/2 = epsilon $
-
-és ez azt jelenit, hogy $(a_n)$ Cauchy-sorozat.
-
-$arrow.double.l$ Tegyük fel, hogy $(a_n)$ Cauchy-sorozat. Több lélpésen keresztül látjuk be, hogy $(a_n)$ konvergens.
-
-==== 1.Lépés
-
-Igazoljuk, hogy $(a_n)$ korlátos sorozat.\
-A Cauchy-sorozat definíciójában $epsilon eq 1$-hez van olyan $n_1 in NN$ index, hogy
-$ forall m,n gt n_1 : abs(a_n - a_m) lt 1. $
-Legyen $m eq n_1 +1$. Ekkor minden $n gt n_1$ esetén
-$ abs(a_n) eq abs((a_n - a_(n_1+1)) + a_(n_1+1)) lt.eq abs(a_n - a_(n_1+1)) + abs(a_(n_1+1)) lt 1 + abs(a_(n_1+1)) $
-Következésképpen az
-$ abs(a_n) lt.eq max{abs(a_0), abs(a_1), ... , abs(a_n_1), 1 + abs(a_(n_1+1))} $
-egyenlőtlenség már minden $n in NN$ számra igaz, azaz a sorozat valóban korlátos
-
-==== 2.Lépés
-A Bolzano-Weierstrass-féle kiválasztási tételből következik, hogy $(a_n)$-nek
-létezik egy $(a_v_n)$ konvergens részsorozata. Jelölje
-$ A colon.eq lim(a_v_n) in RR $
-
-==== 3.Lépés
-Belátjuk, hogy $lim(a_n) = A$ is igaz\
-Legyen $epsilon gt 0$ tetszőleges. Ekkor A definíciójából következik, hogy
-$ exists n_2 in NN, forall n gt n_2 : abs(a_v_n - A) lt epsilon/2 $
-Az $(a_n)$ Cauchy-sorozat, ezért $epsilon$/2-höz
-$ exists n_3 in NN, forall n,m gt n_3 : abs(a_n - a_m) lt epsilon/2 $
-Mivel $(v_n) : NN arrow NN$ indexsorozat (vagyis $(v_n)$ szigorúan monoton növekvő), ezért
-$v_n gt.eq n (n in NN)$, amit teljes indukcióval lehet igazolni.\
-\
-Ha $n gt n_0 colon.eq max{n_2, n_3}$, akkor $v_n gt n_0$, ezért $n$ és $m colon.eq v_n$ is nagyobb, mint $n_2 "és" n_3$, tehát alkalmazhatók a fenti egyenlőtlenségek. Ekkor
-$ abs(a_n - A) eq abs((a_n - a_v_n) + (a_v_n - A)) lt.eq abs(a_n - a_m) + abs(a_v_n - A) lt epsilon/2 + epsilon/2 eq epsilon $
-és ez azt jelenti, hogy az $(a_n)$ sorozat valóban konvergens, és $lim(a_n) eq A$
-
-#pagebreak()
-
 #show heading.where(level: 2): it => it.body
 #show heading.where(level: 2): it => block(
   fill: colorT,
   inset: 10pt,
   radius: 4pt,
 )[#it]
+
+== A végtelen sorokra vonatkozó Cauchy-féle konvergenciakritérium
+
+A $sum a_n$ sor akkor és csak akkor konvergens, ha
+
+$ forall epsilon gt 0"-hoz" exists n_0 in NN, forall m gt n gt n_0 colon abs(a_(n plus 1) plus a_(n plus 2) plus dots plus a_m) lt epsilon $
+
+=== Bizonyítás
+
+Tudjuk, hogy
+
+$ sum a_n "konvergens" &arrow.double.l.r.long &(s_n) "konvergens" &arrow.double.l.r.long (s_n) "Cauchy-sorozat" $
+
+azaz
+
+$ forall epsilon gt 0"-hoz" exists n_0 in NN, forall n, m gt n_0 colon abs(s_m minus s_n) lt epsilon $
+
+teljesül. Állításunk abból következik, hogy ha $m gt n$, akkor
+
+$ s_m minus s_n eq a_(n plus 1) plus a_(n plus 2) plus dots plus a_m $
+
+#pagebreak()
 
 == Végtelen sorokra vonatkozó összehasonlító kritériumok
 \

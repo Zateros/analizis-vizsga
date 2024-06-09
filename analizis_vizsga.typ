@@ -441,7 +441,7 @@ $ forall n gt n_0 : a_n gt.eq a_"n0" gt P, $
 
 == Az $a_n colon.eq (1 + 1 / n)^n (n in NN^(+))$ sorozat konvergenciája
 
-Az $ a_n colon.eq (1 + 1 / n)^n (n in NN^(+)) $ sorozat szigorúan monoton növekvő ls felülről korlátos, tehát konvergens. Legyen
+Az $ a_n colon.eq (1 + 1 / n)^n (n in NN^(+)) $ sorozat szigorúan monoton növekvő és felülről korlátos, tehát konvergens. Legyen
 $ e colon.eq limits(lim)_(n arrow.r +infinity)(1+1/n)^n. $
 
 === Bizonyítás

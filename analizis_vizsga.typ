@@ -783,7 +783,7 @@ az $(s_(2n))$ sorozat monoton növekvő, és az $(s_(2n+1))$ sorozat monoton cs�
 #pagebreak()
 
 - A páros indexű részsorozatnál a következő csoportosításból látható, hogy $ s_(2n) eq overbrace(underbrace((a_1 − a_2), gt.eq 0) + underbrace((a_3 − a_4), gt.eq 0) + dots + underbrace((a_(2n−3) − a_(2n−2)), gt.eq 0), s_(2n-2)) + underbrace((a_(2n−1) − a_(2n)), gt.eq 0) $ minden $n in NN^+$ esetén, tehát $(s_(2n))$ valóban monoton növekvő.
-- Hasonlóan, a páratlan indexű részsorozatnál $ s_(2n+1) eq overbrace(a_1 + underbrace((-a_2 + a_3), lt.eq 0) + underbrace((-a_4 + a_5), lt.eq 0) + dots + underbrace((-a_(2n−2) + a_(2n−1)), lt.eq 0), s_(2n-1)) + underbrace((-a_(2n) − a_(2n+1)), lt.eq 0) $ minden $n in NN^+$ esetén, tehát $(s_(2n+1))$ monoton csökkenő sorozat.
+- Hasonlóan, a páratlan indexű részsorozatnál $ s_(2n+1) eq overbrace(a_1 + underbrace((-a_2 + a_3), lt.eq 0) + underbrace((-a_4 + a_5), lt.eq 0) + dots + underbrace((-a_(2n−2) + a_(2n−1)), lt.eq 0), s_(2n-1)) + underbrace((-a_(2n) + a_(2n+1)), lt.eq 0) $ minden $n in NN^+$ esetén, tehát $(s_(2n+1))$ monoton csökkenő sorozat.
 
 Másrészt, az $s_0 colon.eq 0$ értelmezés mellett
 

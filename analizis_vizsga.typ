@@ -433,7 +433,7 @@ Ez pontosan azt jelenti, hogy az $(a_n)$ sorozat konvergens, és $lim(a_n) = A$.
 \
 2. Tegyük fel, hogy az $(a_n)$ sorozat monoton növekvő és felülről nem korlátos. Ekkor
 $ forall P > 0"-hoz" exists n_0 in NN : a_"n0" gt P. $
-A monotonitás miat ezért egyúttal az is igaz, hogy
+A monotonitás miatt ezért egyúttal az is igaz, hogy
 $ forall n gt n_0 : a_n gt.eq a_"n0" gt P, $
 és ez pontosan azt jelenti, hogy $lim(a_n) eq +infinity.$
 

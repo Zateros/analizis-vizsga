@@ -467,7 +467,7 @@ A monoton sorozatok határértékére vonatkozó tételből következik, hogy a 
 
 == A Cauchy-féle konvergenciakritérium sorozatokra
 
-Legyen $(a_n)$ eg valós sorozat.\
+Legyen $(a_n)$ egy valós sorozat.\
 Ekkor\
 $ (a_n) "konvergens" arrow.l.r.double.long (a_n) "Cauchy-sorozat" $
 

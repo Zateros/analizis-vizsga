@@ -368,7 +368,7 @@ $(a_n dot.op b_n)$ is konvergens és $lim(a_n dot.op b_n) = lim(a_n) dot.op lim(
 
 (\*) miatt elég megmutatni, hogy $(a_n b_n - A B)$ nullsorozat. Ez a következő átalakítással igazolható:
 
-$ a_n b_n - A B = a_n b_n - A b_n + A b_n - A B = (b_n) dot.op (a_n - A) + A dot.op (b_n - B) $
+$ a_n b_n - A B = a_n b_n - A b_n + A b_n - A B = underbrace(underbrace(underbrace(b_n, "korlátos") dot.op underbrace((a_n - A),"nullsorozat"),"nullsorozat") + underbrace(underbrace(A,"korlátos") dot.op underbrace((b_n - B),"nullsorozat"), "nullsorozat"),"nullsorozat") $
 
 A fenti gondolatmenetben a $(b_n)$ sorozat azért korlátos, mert konvergens.
 

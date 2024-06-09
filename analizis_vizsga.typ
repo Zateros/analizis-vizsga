@@ -420,7 +420,7 @@ $ lim(a_n) = sup{a_n | n in NN} $
 
 === Bizonyítás
 
-Tegyük fel, hogy az $(a_n)$ sorozat monoton növekvő és felülről korlátos. Legyen
+1. Tegyük fel, hogy az $(a_n)$ sorozat monoton növekvő és felülről korlátos. Legyen
 $ A colon.eq sup{a_n | n in NN} in RR. $
 Ez azt jelenti, hogy $A$ a szóban forgó halmaznak a legkisebb felső korlátja, azaz
 #list($forall n in NN : a_n lt.eq A "és"$,

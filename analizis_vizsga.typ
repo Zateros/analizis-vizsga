@@ -447,14 +447,14 @@ $ e colon.eq limits(lim)_(n arrow.r +infinity)(1+1/n)^n. $
 === Bizonyítás
 Az állítást a számtani és a mértani közép közötti egyenlőtlenség „ötletes”
 felhasználásaival bizonyítjuk.
-#list($"A monotonitás igazolásához az egyenlőtlenséget az " (n+1) "darab"$)
+- A monotonitás igazolásához az egyenlőtlenséget az $(n+1)$ darab
 $ 1, 1+1/n, 1+ 1/n, ... space, 1+1/n $
 számra alkalmazzuk. Mivel ezek nem mind egyenlők, ezért
 $ root(n+1,1 dot.op (1+1/n)^n) lt (1+n dot.op (1+1/n))/(n+1) eq (n+2)/(n+1) = 1 +1/(n+1) $
 Mindkét oldalt $(n+1)$-edik hatványra emelve azt kapjuk, hogy
 $ a_n eq (1+1/n)^n lt (1+ 1/(n+1))^(n+1) eq a_(n+1) (n in NN^(+)) $
 amivel beláttuk, hogy a sorozat szigorúan monoton növekvő.
-#list("A korlátosság bebizonyításához most az (n+2) darab")
+- A korlátosság bebizonyításához most az $(n+2)$ darab
 $ 1/2, 1/2, 1+1/n, 1+ 1/n, ... space, 1+1/n  $
 számra alkalmazzuk ismét a számtani és a mértani közép közötti egyenlőtlenséget:
 $ root(n+2,1/2 dot.op 1/2 dot.op (1+1/n)^n) lt (2 dot.op 1/2 + n dot.op (1+1/n))/(n+2) eq (n+2)/(n+2) = 1 $

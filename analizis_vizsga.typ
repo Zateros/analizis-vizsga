@@ -403,10 +403,10 @@ egyenlőtlenség már minden $n in NN$ számra teljesül, ezért az $(a/b_n)$ so
 Most az látjuk be, hogy az
 $ (1/b_n) "sorozat konvergens és" lim(1/b_n) = 1/B $
 Ez (\*)-ből következik az alábbi átalakítással:
-$ 1/b_n - 1/B eq (B - b_n)/(B dot.op b_n) eq 1/(B dot.op b_n) dot.op (B - b_n) $
+$ 1/b_n - 1/B eq (B - b_n)/(B dot.op b_n) eq underbrace(underbrace(1/(B dot.op b_n),"korlátos") dot.op underbrace((B - b_n),"nullsorozat"),"nullsorozat") $
 Az állítás bizonyításának a befejezéséhez már csak azt kell figyelembe venni, hogy
-$ a_n/b_n eq a_n dot.op 1/b_n space (n in NN) $
-más szóval az $(a_n/b_n)$ hányados-sorozat két konvergens sorozat szorzata. Így a 2. állítás (konvergens sorozat szorzata) és a reciprok sorozatról az előb mondottak miatt
+$ a_n/b_n eq a_n dot.op 1/b_n space space space (n in NN) $
+más szóval az $(a_n/b_n)$ hányados-sorozat két konvergens sorozat szorzata. Így a 2. állítás (konvergens sorozat szorzata) és a reciprok sorozatról az előbb mondottak miatt
 $ (a_n/b_n) "is konvergens és" lim(a_n/b_n) eq A dot.op 1/B = A/B = lim(a_n)/lim(b_n) $
 
 #pagebreak()

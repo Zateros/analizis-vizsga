@@ -1122,7 +1122,7 @@ Folytassuk az eljárást! Ekkor vagy véges sok lépésben találunk olyan $xi$-
 3. $y_n - x_n eq (b-a)/2^n arrow.long_(n arrow +infinity) 0$
 
 A valós számok Cantor-tulajdonsága szerint az 1) tulajdonságból következik, hogy a fenti
-egymásba skatulyázott intervallumsorozat metszete nem üres. A 3) tulajdonságból következik, hogy ez a metszet egyelemű halmaz, hiszen minden eleme $x_m$ és $y_n$ között található.
+egymásba skatulyázott intervallumsorozat metszete nem üres. A 3) tulajdonságból következik, hogy ez a metszet egyelemű halmaz, hiszen minden eleme $x_n$ és $y_n$ között található.
 
 Jelölje $xi$ a metszet egyedüli elemét, azaz
 

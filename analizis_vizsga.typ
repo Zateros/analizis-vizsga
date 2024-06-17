@@ -1122,7 +1122,7 @@ Folytassuk az eljárást! Ekkor vagy véges sok lépésben találunk olyan $xi$-
 3. $y_n - x_n eq (b-a)/2^n arrow.long_(n arrow +infinity) 0$
 
 A valós számok Cantor-tulajdonsága szerint az 1) tulajdonságból következik, hogy a fenti
-egymásba skatulyázott intervallumsorozat metszete nem üres. A 3) tulajdonságból következik, hogy ez a metszet egyelemű halmaz, hiszen minden eleme $x_m$ és $y_n$ között található.
+egymásba skatulyázott intervallumsorozat metszete nem üres. A 3) tulajdonságból következik, hogy ez a metszet egyelemű halmaz, hiszen minden eleme $x_n$ és $y_n$ között található.
 
 Jelölje $xi$ a metszet egyedüli elemét, azaz
 
@@ -1161,7 +1161,7 @@ $ s_n := 1 + 1/1! + 1/2! + 1/3! + ... + 1/n! space (n in NN^+) $
 
 sorozat szigorúan monoton növekvő módon tart $e$-hez, ha $n arrow.long +infinity$. Legyen $n gt q$ tetszőleges egész. Ekkor
 
-$ 0 gt q! dot.op (s_n - s_q) eq q! dot.op (1/(q+1)! + 1/(q+2)! + ... + 1/n!) eq $
+$ 0 lt q! dot.op (s_n - s_q) eq q! dot.op (1/(q+1)! + 1/(q+2)! + ... + 1/n!) eq $
 $ eq 1/(q+1) + 1/((q+1)(q+2)) + ... + 1/((q+1)dot.op ... dot.op n) lt.eq $
 $ lt.eq 1/(q+1) dot.op (1 + 1/(q+1) + 1/(q+1)^2 + ... + 1/(q+1)^(n-q-1)) lt.eq $
 $ lt.eq 1/(q+1) dot.op 1/(1- 1/(q+1)) eq 1/q lt.eq 1/2 $

@@ -879,9 +879,9 @@ $ R = 1/A space (1 / (+infinity) := 0, 1/0 := +infinity) $
 
 === Bizonyítás
 \
-Nyilvánvaló, hogy $A gt.eq 0$. Rögzítsük tetszőlegesen az $x in RR$ számot, és alkamazzuk a Cauchy-féle gyökkritériumot a $ sum alpha_n(x-a)^n$ végtelen számsorra:
+Nyilvánvaló, hogy $A gt.eq 0$. Rögzítsük tetszőlegesen az $x in RR$ számot, és alkamazzuk a Cauchy-féle gyökkritériumot a $ sum alpha_n (x-a)^n$ végtelen számsorra:
 
-$ lim_(n arrow +infinity) root(n, abs(alpha_n (x-a)^n)) eq (lim_(n arrow +infinity) root(n, abs(alpha_n)) dot.op abs(x-a) eq A abs(x-a), "és így" $
+$ lim_(n arrow +infinity) root(n, abs(alpha_n (x-a)^n)) eq (lim_(n arrow +infinity) root(n, abs(alpha_n))) dot.op abs(x-a) eq A abs(x-a), "és így" $
 
 $ A abs(x-a) lt 1 arrow.long.double "a sor konvergens", space A abs(x-a) gt 1 arrow.long.double "a sor divergens." $
 
@@ -1130,7 +1130,7 @@ $ sect.big_(n in NN) [x_n,y_n] eq {xi} $
 
 A konstrukcióból következik, hogy
 
-$ lim_(n arrow +infinity) f(x_n) eq xi eq lim_(n arrow +infinity) y_n $
+$ lim_(n arrow +infinity) x_n eq xi eq lim_(n arrow +infinity) y_n $
 
 Mivel $f$ folytonos $xi$-ben, ezért az átvételi elv szerint
 

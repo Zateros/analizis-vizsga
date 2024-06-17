@@ -398,7 +398,7 @@ hiszen $abs(B) eq abs(B - b_n + b_n) lt.eq abs(B-b_n) + abs(b_n)$. Tehát
 $ abs(1/b_n) lt 2/abs(B)," ha " n gt n_0, $
 következésképpen az
 $ abs(1/b_n) lt.eq max{1/abs(b_0),1/abs(b_1),....,1/abs(b_n_0), 2/abs(B)} $
-egyenlőtlenség már minden $n in NN$ számra teljesül, ezért az $(a/b_n)$ sorozat valóban korlátos. A segédtételt tehát bebizonyítottuk.\
+egyenlőtlenség már minden $n in NN$ számra teljesül, ezért az $(1/b_n)$ sorozat valóban korlátos. A segédtételt tehát bebizonyítottuk.\
 \
 Most az látjuk be, hogy az
 $ (1/b_n) "sorozat konvergens és" lim(1/b_n) = 1/B $
